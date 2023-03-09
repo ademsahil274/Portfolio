@@ -1,5 +1,6 @@
-import React, {useState} from 'react';
+import React, { useState, Component } from 'react';
 import {Link, useLocation} from 'react-router-dom';
+// import Navigation from './navigationMenu'
 
 function Header() {
   const location = useLocation();
@@ -11,6 +12,9 @@ function Header() {
   }
   return (
     <header className="header">
+      <nav>
+        <h1> Adem Sahil </h1>
+      </nav>
       <nav>
         <ul>
           <li className={currentPage === "about" ? "navLinkSelected" : ""} onClick={() => handleClick("about")}><Link to="/about">About</Link></li>

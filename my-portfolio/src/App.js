@@ -6,7 +6,7 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Header from './components/Header';
-import navigationMenu from './components/navigationMenu';
+//import navigationMenu from './components/navigationMenu';
 import Portfolio from './components/Portfolio';
 import Footer from './components/Footer';
 
@@ -20,6 +20,7 @@ function App() {
         <Route path='/contact' element = {<Contact/>} />
         <Route path='/portfolio' element = {<Portfolio/>} />
         <Route path='/resume' element = {<Resume />} />
+        <Route patch='/projects' element = {<Projects />} />
       </Routes>
       <Footer />
       {/* <About />
