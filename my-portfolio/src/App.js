@@ -1,63 +1,26 @@
-import './App.css'
-import React from 'react';
-import Resume from './components/Resume';
-import {Routes, Route} from 'react-router-dom';
-import About from './components/About';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
-import Header from './components/Header';
-//import navigationMenu from './components/navigationMenu';
-import Portfolio from './components/Portfolio';
-import Footer from './components/Footer';
+import Nav from "./components/Nav";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./App.css";
+import AboutMe from "./components/AboutMe";
+import Contact from "./components/Contact";
+import Resume from "./components/Resume";
+import Portfolio from "./components/Portfolio";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="app">
-      <Header />
+    <BrowserRouter>
+      <Nav />
       <Routes>
-        <Route path='/' element = {<About/>} />
-        <Route path='/about' element = {<About/>} />
-        <Route path='/contact' element = {<Contact/>} />
-        <Route path='/portfolio' element = {<Portfolio/>} />
-        <Route path='/resume' element = {<Resume />} />
-        <Route patch='/projects' element = {<Projects />} />
+        <Route path="/" element={<AboutMe />}></Route>
+        <Route path="/portfolio" element={<Portfolio />}></Route>
+        <Route path="/contact" element={<Contact />}></Route>
+        <Route path="/resume" element={<Resume />}></Route>
+        {/* <Route path="*" element={<NotFound />}></Route> */}
       </Routes>
       <Footer />
-      {/* <About />
-      <Projects />
-      <Contact />
-      <Portfolio /> */}
-    </div>
+    </BrowserRouter>
   );
 }
 
 export default App;
-
-
-
-
-// import logo from './logo.svg';
-// import './App.css';
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;
