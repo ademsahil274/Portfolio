@@ -1,4 +1,4 @@
-# React
+# Portfolio
 HW-20
 
 ## User Story
@@ -34,12 +34,6 @@ WHEN I am presented with the Resume section <br>
 THEN I see a link to a downloadable resume and a list of the developer’s proficiencies <br>
 WHEN I view the footer <br>
 THEN I am presented with text or icon links to the developer’s GitHub and LinkedIn profiles, and their profile on a third platform (Stack Overflow, Twitter) <br>
-
-## Screen Shot
-![Alt text](public/images/Portfolio%201.PNG)
-![Alt text](public/images/Portfolio%202.PNG)
-![Alt text](public/images/Portfolio%203.PNG)
-![Alt text](public/images/Portfolio%204.PNG)
 
 ## Walkthrough Video
 
